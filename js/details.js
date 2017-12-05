@@ -14,9 +14,9 @@ var Details = {
         var self = this;
         scrollTo(0,0);
         self.qryDate();//加载数据
-        self.initTimer();//显示倒计时
+        // self.initTimer();//显示倒计时
         self.initEvent();
-        self.showNav();//标题动画效果
+        // self.showNav();//标题动画效果
     },
     /**
      * 绑定基础的页面事件

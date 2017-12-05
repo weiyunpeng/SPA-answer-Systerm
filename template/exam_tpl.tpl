@@ -1,5 +1,5 @@
 <ul class="topicRadio">
-    <div class="weui-cells__title event_title">单选题</div>
+    <!-- <div class="weui-cells__title event_title">单选题</div> -->
     <% var radioList = list.radioList%>
     <%if(radioList&&radioList.length){%>
     <%for(var i = 0; i < radioList.length; i++) {%>
@@ -14,6 +14,7 @@
                 <div class="weui-cell__hd">
                     <input type="radio" class="weui-check" name="radioX<%=i%>" id="x<%=i%><%=j%>" value="<%=answerList[j][1]%>radioX<%=i%><%=j%>">
                     <i class="weui-icon-checked"></i>
+                    <i class="is-correct"></i>
                 </div>
 
                 <div class="weui-cell__bd">
@@ -29,7 +30,7 @@
     <li>无数据，请联系管理员</li>
     <%}%>
     <div class="weui-btn-area">
-        <a class="weui-btn weui-btn_primary" href="javascript:" id="nextPage1">下一页</a>
+        <a class="weui-btn weui-btn_primary" href="javascript:" id="nextPage1">提交</a>
     </div>
 </ul>
 
