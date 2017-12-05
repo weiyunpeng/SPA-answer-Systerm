@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>微信廉政知识学习</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="Stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="Stylesheet" type="text/css" href="css/jquery-weui.min.css">
+    <!--<link rel="Stylesheet" type="text/css" href="css/scss/details.css">-->
+    <style>
+        .index-header {
+            width: 100%;
+            height: 100%;
+            padding: 15px 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .index-title {
+            width: 95%;
+            margin-top: 70px;
+        }
+
+        .weui-btn_primary {
+            background: -webkit-linear-gradient(#d50d00, #d50d0f);
+        }
+
+        .weui-vcode-btn {
+            color: #2269d5;
+            border: none;
+        }
+
+        .weui-cells {
+            padding: 0 10px;
+            background-color: transparent;
+        }
+
+        .weui-cells:before {
+            border: none;
+            color: #2269d5;
+        }
+
+        .weui-cells:after {
+            border-bottom: 0px;
+            color: #2269d5;
+        }
+
+        .weui-cell:before {
+            color: #7c7c7d;
+            border-top: 1px solid #7c7c7d;
+        }
+
+        .code-btn {
+            padding-left: 15px;
+            border-left: 1px solid #2269d5;
+        }
+
+        input::-webkit-input-placeholder {
+            color: #7c7c7d;
+        }
+
+        .weui-cell_select-after .weui-select {
+            color: #7c7c7d;
+        }
+
+        .section2 {
+            width: 100%;
+            padding: 10px 17px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .section2-tit {
+            color: #232222;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .section2-text {
+            color: #232222;
+            font-size: 16px;
+            line-height: 20px;
+            text-indent: 22px;
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+    <!--头部文字-->
+    <header class='index-header'>
+        <img src="http://static-1251225286.cossh.myqcloud.com/2017zt/jw-title.png" class="index-title">
+    </header>
+    <section style="display: none">
+        <!--背景图片-->
+        <img src="http://static-1251225286.cossh.myqcloud.com/2017zt/jw-bg.jpg	" style="width: 100%;z-index: -2;position: absolute;top: 0;left: 0">
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input id="userName" class="weui-input" type="text" placeholder="请输入姓名">
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_select weui-cell_select-after">
+                <div class="weui-cell__bd">
+                    <select class="weui-select">
+                        <option value="1">--所在市直单位/县市区--</option>
+                        <option value="2">荥阳</option>
+                        <option value="3">新郑</option>
+                    </select>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入单位名称">
+                </div>
+            </div>
+            <div class="weui-cell weui-cell_vcode">
+                <div class="weui-cell__bd">
+                    <input id="tel" class="weui-input" type="tel" placeholder="请输入手机号">
+                </div>
+                <div class="weui-cell__ft">
+                    <button id="codeBtn" class="weui-vcode-btn check_btn checking">
+                        <span class="code-btn">发送验证码</span>
+                    </button>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input id="code" class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入验证码">
+                </div>
+            </div>
+            <div class="weui-cell" style="padding:0">
+            </div>
+        </div>
+        <div class="weui-btn-area">
+            <a class="weui-btn weui-btn_primary" href="javascript:" id="examBtn">开始答题</a>
+        </div>
+    </section>
+    <section class="section2">
+        <!--背景图片-->
+        <img src="http://static-1251225286.cossh.myqcloud.com/2017zt/jw-details-bg.jpg" style="width: 100%;z-index: -2;position: absolute;top: 0;left: 0">
+        <h3 class="section2-tit">1.内容</h3>
+        <p class="section2-text">为深入学习宣传贯彻党的十九大精神常态化，增强全市党员领导干部以习近平新时代中国特色社会主义思想为指导，强化对党的十九大精神的学习和理解，清风郑州（郑州市纪委官方微信）组织开展“学习宣传贯彻党的十九大精神”网上互动竞答活动。</p>
+        
+        <h3 class="section2-tit">2.答题形式</h3>
+        <p class="section2-text">1). 登录清风郑州微信平台，点击左下角栏目“十九大”进入答题页面参与答题。</p>
+        <p class="section2-text">2). 答题时需填写姓名、单位名称、有效的手机号码，可重复答题。</p>
+        <p class="section2-text">3). 每道题下方共有4个选项，在你认为正确的选项前面打“√”，20道题答题完成后点击“提交”，答题时间为10分钟。</p>
+
+        <h3 class="section2-tit">3.答题时间</h3>
+        <p class="section2-text">本次活动为2017年12月6日至2018年2月6日。根据后台数据自动统计各单位参与人员数量、分数等情况，每周进行网上排名公布。</p>
+
+        <div class="weui-btn-area">
+                <a class="weui-btn weui-btn_primary" href="javascript:" id="sureBtn">确定</a>
+        </div>
+    </section>
+    <script src="http://henan.qq.com/js/jquery-1.8.2.min.js"></script>
+    <script src="js/jquery-weui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //初始化页面
+            Page.initPage();
+        });
+        var Page = {
+            /**
+             * 初始化页面
+             */
+            initPage: function () {
+                var self = this;
+                $(document.body).on("touchmove", function (e) {
+                    //禁止触摸事件
+                    e.preventDefault();
+                });
+                self.initEvent();
+            },
+            /**
+             * 初始化事件
+             */
+            initEvent: function () {
+                var self = this;
+                //发送验证码
+                $("#codeBtn").click(function () {
+                    var tel = $('#tel').val();
+                    if (!tel || !/1[3|4|5|7|8]\d{9}/.test(tel)) {
+                        $.toptip('请输入正确的手机号')
+                    } else {
+                        var flag = $("#codeBtn").hasClass('checked'); //说明是倒计时状态，不可点击
+                        if (flag) {
+                            return false
+                        }
+                        self.initSend();
+                    }
+                });
+
+                //开始答题按钮
+                $("#sureBtn").click(function () {
+                    var tel = $('#tel').val();
+                    var code = $('#code').val();
+                    var userName = $('#userName').val();
+                    if (!userName) {
+                        $.toptip('请输入姓名');
+                    } else if (!tel || $("#codeBtn").hasClass('checking')) {
+                        $.toptip('请输入手机号并获取验证码')
+                    } else if (!code) {
+                        $.toptip('请输入验证码');
+                    } else {
+                        self.getUserInfo();
+                    }
+                });
+            },
+            /**
+             *短信验证基础事件
+             */
+            initSend: function () {
+                var self = this;
+                var time = 60; //获取验证码时间
+                function timeCountDown() {
+                    if (time == 0) {
+                        clearInterval(timer);
+                        $('#codeBtn').removeClass('checked').addClass('checking').html("获取验证码"); //发送验证码
+                        return true;
+                    }
+                    $('#codeBtn').removeClass('checking').addClass('checked').html(time + "S后再次发送"); //改为灰色倒计时状态
+                    time--;
+                    return false;
+                }
+                $('span').removeClass('checking').addClass('checked'); //改为灰色倒计时状态
+                var timer = setInterval(timeCountDown, 1000);
+            },
+            /**
+             * 提交用户信息
+             */
+            getUserInfo: function () {
+                var self = this;
+                $.toptip('提交成功', 'success');
+                setTimeout(function () {
+                    window.open("details.html");
+                }, 1000)
+            }
+        }
+    </script>
+
+</body>
+
+</html>

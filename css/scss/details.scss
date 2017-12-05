@@ -1,0 +1,107 @@
+@import "../main";
+@import "../baseColor";
+@include clear-side;
+
+body, html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+.z-hide{
+  display: none;
+}
+
+.details-header {
+  padding: 15px 0;
+  .details-title {
+    text-align: center;
+    font-size: 22px;
+    font-family: "Î¢ÈíÑÅºÚ";
+    color: #ff0000;
+    font-weight: 800;
+    margin: 0 15%;
+  }
+  .details-con {
+    text-align: center;
+    text-indent: 7%;
+    padding: 0 14px;
+    font-size: 16px;
+    color: #e3edf5;
+  }
+  .details-time{
+    text-align: center;
+    color: #ff0000;
+    font-size: 20px;
+    font-family: Î¢ÈíÑÅºÚ;
+    span{
+      font-size: 16px;
+      color: #000000;
+      padding: 0 5px;
+    }
+  }
+}
+
+.leftShow{
+  @include animation(leftShow 1s 1);
+  @include keyframes(leftShow){
+    0% {left:0;}
+    100% {left:-100px;}
+  }
+  left:-100px !important;
+}
+
+//ÔÚÎ¢ÐÅUIµÄ»ù´¡ÉÏ½øÐÐÐÞ¸Ä
+.weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {
+  color: #154eb6;
+}
+.weui-cells__title{
+  background: $detailsNav;
+  background-size: 100%;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  font-family: "Î¢ÈíÑÅºÚ";
+  font-size: pxToRem(26px);
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.weui-btn-area{
+  position: relative;
+  left: 0;
+  bottom: 0px;
+}
+.weui-cells{
+  background-color: inherit;
+}
+
+.div_topic {
+  padding: 10px;
+}
+li{
+  height: auto;
+  position: relative;
+  top: 0;
+}
+li:nth-child(even){
+  //background-color: #E0EEF5;
+  border: #73AFD0 dashed;
+  border-width: 0 0 1px 0;
+}
+.div_topic h4 {
+  font-size: 16px;
+  color: #22536A;
+  display: block;
+  padding: 3px;
+}
+.weui-btn_plain-default {
+  //background: -webkit-linear-gradient(blue, #154eb6);
+  color: #FFFFFF;
+}
+
+.weui-btn_primary{
+  background: $baseBtn;
+}
+
+

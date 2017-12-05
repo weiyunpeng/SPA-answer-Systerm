@@ -1,0 +1,73 @@
+<ul class="topicRadio">
+    <div class="weui-cells__title"><%=list.typeName%></div>
+    <% var examList = list.examList%>
+    <%if(examList&&examList.length){%>
+    <%for(var i = 0; i < examList.length; i++) {%>
+    <li>
+        <div class="div_topic">
+            <h4><%=i+1%>、<%=list[i].title%></h4>
+        </div>
+        <div class="weui-cells weui-cells_checkbox">
+            <%var answerList =  examList[i].answerList%>
+            <%for(var j = 0; j < answerList.length; j++) {%>
+            <% var type = list.type %>
+
+            <label class="weui-cell weui-check__label" for="x<%=i%><%=j%>">
+                <div class="weui-cell__hd">
+                    <input type="<%=examList.type%>" class="weui-check" name="radioX<%=i%>" id="x<%=i%><%=j%>" value="<%=answerList[j][1]%>">
+                    <i class="weui-icon-checked"></i>
+                </div>
+
+                <div class="weui-cell__bd">
+                    <p><%=list[i].answerList[j][0]%></p>
+                </div>
+            </label>
+            <%}%>
+        </div>
+    </li>
+    <%}%>
+    <%}else{%>
+    <!-- 无数据 -->
+    <li>无数据，请联系管理员</li>
+    <%}%>
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" href="javascript:" id="nextPage">下一页</a>
+    </div>
+</ul>
+<ul class="topicTOF z-hide">
+    <div class="weui-cells__title">判断题</div>
+    <% var list = trueOrFalseList.list%>
+    <%if(list&&list.length){%>
+    <%for(var i = 0; i < list.length; i++) {%>
+    <li>
+        <div class="div_topic">
+            <h4><%=i+1%>、<%=list[i].title%></h4>
+        </div>
+        <div class="weui-cells weui-cells_checkbox">
+            <%var answerList =  list[i].answerList%>
+            <%for(var j = 0; j < answerList.length; j++) {%>
+            <label class="weui-cell weui-check__label" for="y<%=i%><%=j%>">
+                <div class="weui-cell__hd">
+                    <input type="radio" class="weui-check" name="radioY<%=i%>" id="y<%=i%><%=j%>" value="<%=answerList[j][1]%>">
+                    <i class="weui-icon-checked"></i>
+                </div>
+
+                <div class="weui-cell__bd">
+                    <p><%=list[i].answerList[j][0]%></p>
+                </div>
+            </label>
+            <%}%>
+        </div>
+    </li>
+    <%}%>
+    <%}else{%>
+    <!-- 无数据 -->
+    <li>无数据，请联系管理员</li>
+    <%}%>
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" href="javascript:" id="prevPage">上一页</a>
+    </div>
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_plain-default" href="javascript:" id="submitBtn">提交</a>
+    </div>
+</ul>
