@@ -93,7 +93,7 @@
     <header class='index-header'>
         <img src="http://static-1251225286.cossh.myqcloud.com/2017zt/jw-title.png" class="index-title">
     </header>
-    <section style="display: none">
+    <section id="sec1">
         <!--背景图片-->
         <img src="http://static-1251225286.cossh.myqcloud.com/2017zt/jw-bg.jpg	" style="width: 100%;z-index: -2;position: absolute;top: 0;left: 0">
         <div class="weui-cells weui-cells_form">
@@ -138,7 +138,7 @@
             <a class="weui-btn weui-btn_primary" href="javascript:" id="examBtn">开始答题</a>
         </div>
     </section>
-    <section class="section2">
+    <section id="sec2" class="section2" style="display: none">
         <!--背景图片-->
         <img src="http://static-1251225286.cossh.myqcloud.com/2017zt/jw-details-bg.jpg" style="width: 100%;z-index: -2;position: absolute;top: 0;left: 0">
         <h3 class="section2-tit">1.内容</h3>
@@ -195,6 +195,24 @@
                 });
 
                 //开始答题按钮
+                $("#examBtn").click(function () {
+                    var tel = $('#tel').val();
+                    var code = $('#code').val();
+                    var userName = $('#userName').val();
+                    if (!userName) {
+                        $.toptip('请输入姓名');
+                    } else if (!tel || $("#codeBtn").hasClass('checking')) {
+                        $.toptip('请输入手机号并获取验证码')
+                    } else if (!code) {
+                        $.toptip('请输入验证码');
+                    } else {
+                        // $.toptip('提交成功', 'success');
+                        $('#sec1').hide();
+                        $('#sec2').show();
+                    }
+                });
+
+                //确定按钮
                 $("#sureBtn").click(function () {
                     var tel = $('#tel').val();
                     var code = $('#code').val();
@@ -234,7 +252,6 @@
              */
             getUserInfo: function () {
                 var self = this;
-                $.toptip('提交成功', 'success');
                 setTimeout(function () {
                     window.open("details.html");
                 }, 1000)
