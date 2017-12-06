@@ -150,19 +150,19 @@ var Details = {
                         "type": "radio",
                         "answerList": [
                             [
-                                "萨达打算大三的",
+                                "A. 萨达打算大三的",
                                 "no"
                             ],
                             [
-                                "让法国人哥哥二个如果",
+                                "B. 让法国人哥哥二个如果",
                                 "no"
                             ],
                             [
-                                "啊实打实大苏打苏打水打算大三大四的231",
+                                "C. 啊实打实大苏打苏打水打算大三大四的231",
                                 "no"
                             ],
                             [
-                                "测试测试测试测试测试测试",
+                                "D. 测试测试测试测试测试测试",
                                 "yes"
                             ]
                         ]
@@ -172,19 +172,19 @@ var Details = {
                         "type": "radio",
                         "answerList": [
                             [
-                                "萨达打算大三的",
+                                "A. 萨达打算大三的",
                                 "no"
                             ],
                             [
-                                "让法国人哥哥二个如果",
+                                "B. 让法国人哥哥二个如果",
                                 "no"
                             ],
                             [
-                                "啊实打实大苏打苏打水打算大三大四的231",
+                                "C. 啊实打实大苏打苏打水打算大三大四的231",
                                 "no"
                             ],
                             [
-                                "测试测试测试测试测试测试",
+                                "D. 测试测试测试测试测试测试",
                                 "yes"
                             ]
                         ]
@@ -194,19 +194,19 @@ var Details = {
                         "type": "radio",
                         "answerList": [
                             [
-                                "萨达打算大三的",
+                                "A. 萨达打算大三的",
                                 "no"
                             ],
                             [
-                                "让法国人哥哥二个如果",
+                                "B. 让法国人哥哥二个如果",
                                 "no"
                             ],
                             [
-                                "啊实打实大苏打苏打水打算大三大四的231",
+                                "C. 啊实打实大苏打苏打水打算大三大四的231",
                                 "no"
                             ],
                             [
-                                "测试测试测试测试测试测试",
+                                "D. 测试测试测试测试测试测试",
                                 "yes"
                             ]
                         ]
@@ -216,19 +216,19 @@ var Details = {
                         "type": "radio",
                         "answerList": [
                             [
-                                "萨达打算大三的",
+                                "A. 萨达打算大三的",
                                 "no"
                             ],
                             [
-                                "让法国人哥哥二个如果",
+                                "B. 让法国人哥哥二个如果",
                                 "no"
                             ],
                             [
-                                "啊实打实大苏打苏打水打算大三大四的231",
+                                "C. 啊实打实大苏打苏打水打算大三大四的231",
                                 "no"
                             ],
                             [
-                                "测试测试测试测试测试测试",
+                                "D. 测试测试测试测试测试测试",
                                 "yes"
                             ]
                         ]
@@ -238,19 +238,19 @@ var Details = {
                         "type": "radio",
                         "answerList": [
                             [
-                                "萨达打算大三的",
+                                "A. 萨达打算大三的",
                                 "no"
                             ],
                             [
-                                "让法国人哥哥二个如果",
+                                "B. 让法国人哥哥二个如果",
                                 "no"
                             ],
                             [
-                                "啊实打实大苏打苏打水打算大三大四的231",
+                                "C. 啊实打实大苏打苏打水打算大三大四的231",
                                 "no"
                             ],
                             [
-                                "测试测试测试测试测试测试",
+                                "D. 测试测试测试测试测试测试",
                                 "yes"
                             ]
                         ]
@@ -260,19 +260,19 @@ var Details = {
                         "type": "radio",
                         "answerList": [
                             [
-                                "萨达打算大三的",
+                                "A. 萨达打算大三的",
                                 "no"
                             ],
                             [
-                                "让法国人哥哥二个如果",
+                                "B. 让法国人哥哥二个如果",
                                 "no"
                             ],
                             [
-                                "啊实打实大苏打苏打水打算大三大四的231",
+                                "C. 啊实打实大苏打苏打水打算大三大四的231",
                                 "no"
                             ],
                             [
-                                "测试测试测试测试测试测试",
+                                "D. 测试测试测试测试测试测试",
                                 "yes"
                             ]
                         ]
@@ -282,56 +282,64 @@ var Details = {
                         "type": "radio",
                         "answerList": [
                             [
-                                "萨达打算大三的",
+                                "A. 萨达打算大三的",
                                 "no"
                             ],
                             [
-                                "让法国人哥哥二个如果",
+                                "B. 让法国人哥哥二个如果",
                                 "no"
                             ],
                             [
-                                "啊实打实大苏打苏打水打算大三大四的231",
+                                "C. 啊实打实大苏打苏打水打算大三大四的231",
                                 "no"
                             ],
                             [
-                                "测试测试测试测试测试测试",
+                                "D. 测试测试测试测试测试测试",
                                 "yes"
                             ]
                         ]
                     },
                     {
-                        "title": "2单选题单选题单选题单选题单选题单选题单选题单选题",
+                        "title": "1单选题单选题单选题单选题单选题单选题单选题单选题",
                         "type": "radio",
                         "answerList": [
                             [
-                                "萨达打算大三的",
+                                "A. 萨达打算大三的",
                                 "no"
                             ],
                             [
-                                "让法国人哥哥二个如果",
+                                "B. 让法国人哥哥二个如果",
                                 "no"
                             ],
                             [
-                                "啊实打实大苏打苏打水打算大三大四的231",
+                                "C. 啊实打实大苏打苏打水打算大三大四的231",
                                 "no"
+                            ],
+                            [
+                                "D. 测试测试测试测试测试测试",
+                                "yes"
                             ]
                         ]
                     },
                     {
-                        "title": "2单选题单选题单选题单选题单选题单选题单选题单选题",
+                        "title": "1单选题单选题单选题单选题单选题单选题单选题单选题",
                         "type": "radio",
                         "answerList": [
                             [
-                                "萨达打算大三的",
+                                "A. 萨达打算大三的",
                                 "no"
                             ],
                             [
-                                "让法国人哥哥二个如果",
+                                "B. 让法国人哥哥二个如果",
                                 "no"
                             ],
                             [
-                                "啊实打实大苏打苏打水打算大三大四的231",
+                                "C. 啊实打实大苏打苏打水打算大三大四的231",
                                 "no"
+                            ],
+                            [
+                                "D. 测试测试测试测试测试测试",
+                                "yes"
                             ]
                         ]
                     },
@@ -966,7 +974,6 @@ var Details = {
                 var dateValue = data[input_name];
                 var input_val = $form_ele.val();
                 //var input_val = $.trim($form_ele.offsetParent().find(".weui-cell__bd").text());
-                console.log("dateValue=="+dateValue);
                 if(dateValue){
                     if(typeof (dateValue) == "string"){
                         //单选框事件
@@ -1025,19 +1032,25 @@ var Details = {
      *计算总分
      */
     countScore:function(num){
-        var　self = this;
+        var self = this;
         var correct = 0;//计算正确个数
         var checkbox_arr=[];//被勾选的checkbox的值的数组
         var no_checkbox_arr=[];//没有被勾选的checkbox的值的数组
         var radio_answer = "";
+        var correctNum = 0;
         $("li").each(function(i){
             //if($(this).find('input[type="radio"]:checked').val() == undefined){}
             //获取单选框的值：单选题和判断题
             radio_answer = $(this).find('input[type="radio"]:checked').val();
+            $('.is-cor').show();
             if(radio_answer){
+                correctNum = radio_answer.substr(radio_answer.length-1,1);
                 radio_answer = radio_answer.substring(0,3);
                 if(radio_answer == "yes"){
+                    // $(this).find(`.is${correctNum}`).show();
                     correct++;
+                }else{
+                    $(this).find(`.no${correctNum}`).show();
                 }
             }
         });
@@ -1078,7 +1091,11 @@ var Details = {
     getPerScore:function(correct){
         var self = this;
         window.localStorage.clear();
-        $.toast("提交成功!获得"+correct+"分");
+        $.confirm("答对"+correct+"道题；"+"获得"+correct+"分","提交成功!" , function() {
+            $('html,body').animate({scrollTop: '0px'}, 800);
+        }, function() {
+            //取消操作
+        });
     },
 
     //**************************特效类事件************************************************

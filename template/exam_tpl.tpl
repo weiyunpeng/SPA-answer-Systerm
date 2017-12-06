@@ -14,11 +14,15 @@
                 <div class="weui-cell__hd">
                     <input type="radio" class="weui-check" name="radioX<%=i%>" id="x<%=i%><%=j%>" value="<%=answerList[j][1]%>radioX<%=i%><%=j%>">
                     <i class="weui-icon-checked"></i>
-                    <i class="is-correct"></i>
                 </div>
 
                 <div class="weui-cell__bd">
                     <p><%=radioList[i].answerList[j][0]%></p>
+                    <%if(answerList[j][1] == "yes"){%>
+                        <i class="is-correct z-hide is-cor"></i>
+                    <%}%>
+                    <i class="is-correct z-hide is<%=[j]%>"></i>
+                    <i class="isnt-correct z-hide no<%=[j]%>"></i>
                 </div>
             </label>
             <%}%>
@@ -30,7 +34,7 @@
     <li>无数据，请联系管理员</li>
     <%}%>
     <div class="weui-btn-area">
-        <a class="weui-btn weui-btn_primary" href="javascript:" id="nextPage1">提交</a>
+        <a class="weui-btn weui-btn_primary" href="javascript:" id="submitBtn">提交</a>
     </div>
 </ul>
 
