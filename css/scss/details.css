@@ -39,6 +39,7 @@ body, html { height: 100%; -webkit-tap-highlight-color: transparent; }
 @keyframes leftShow { 0% { left: 0; }
   100% { left: -100px; } }
 .weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before { color: #22536A; }
+/* .weui-cells_checkbox .weui-icon-checked:before{font-size: 16px;} */
 
 .weui-cells__title { background: url(../../imgs/details_nav_bg.png) right top no-repeat; background-size: 100%; width: 90px; height: 40px; line-height: 40px; color: #ffffff; font-family: "微软雅黑"; font-size: 0.8125rem; position: relative; left: 0; top: 0; }
 
